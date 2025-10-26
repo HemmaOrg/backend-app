@@ -5,7 +5,7 @@ dotenv.config();
 
 export const dbConn = connect(process.env.MONGO_URI)
   .then(() => {
-    console.log("Database connected");
+    console.log("Database connected successfully");
   })
   .catch((err) => {
     console.log("Database error", err.message);
